@@ -1,0 +1,19 @@
+
+.logo {
+  width: 25em;
+  display: flex;
+}
+
+.barra {
+display: flex;
+align-items: flex-end;
+
+}
+
+.submenu {
+  border: 0;
+}
+
+hr {
+  box-shadow: 10px 5px 5px var(--onnet);
+}

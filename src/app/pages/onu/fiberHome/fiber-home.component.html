@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onu FiberHome</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <div class="conteiner">
+      <h3>Onu FiberHome</h3>
+        <p>Muita gente que possui internet via Fibra Óptica, já deve ter se questionado a respeito do equipamento que fica geralmente colado na parede, a ONU (Optical Network Unit). Ela tem uma funcionalidade muito importante na conexão do cliente de Fibra Óptica, pois este equipamento é a ponta final da ligação entre seu provedor e sua casa. Ela é a responsável por ler o sinal de luz que trafega pela rede de Fibra Óptica que vem do nossos equipamentos (OLT, Optical Line Termina) e também traduzir esse sinal de luz para linguagem do roteador, ou seja, ela converte um sinal de luz em sinal de energia elétrica, pois os roteadores que trabalhamos atualmente, não tem leitores ópticos e sim leitores eletrônicos (existe modelos que tem leitor óptico, mas não trabalhamos com eles), que são as portas de entrada e saída de dados, as portas LAN e WAN, localizadas atras do roteador. Vamos conhecer um pouco mais sobre as portas e LEDs deste equipamento ao decorrer do texto.</p>
+        <h3>PON (Passive Optical Network)</h3>
+        <p>A porta de Leitura deste sinal óptico no equipamento ONU, é a porta PON (Passive Optical Network) e a comunicação que acontece é através da rede óptica na transmissão e recepção de sinal de luz. Essa porta, dependendo do modelo do seu equipamento, utiliza um conector óptico APC (verde) ou UPC (azul) localizado geralmente na parte superior do equipamento e é representado pelo LED semelhante a letra “ i ” minuscula e, sua luz deve se manter ligada e estável. Se estiver desligada ou piscando sem parar, pode haver um problema de sinal e você deve ligar para seu provedor.</p>
+        <img src="assets/onufiberhome.png" alt="OnuFiberHome">
+        <p>OBS: A porta PON e o conector de fibra, são pontos muito sensíveis, então evite ao máximo mexer nesses pontos, a não ser que seu provedor lhe peça para mexer, caso contrario, você pode ficar sem conexão.</p>
+        <h3>LOS</h3>
+        <p>O LOS é representado pelo LED identificado com o mesmo nome “LOS” (Loss Of Signal), e ele é representado na ONU com LED que parece com uma “meia lua” juntamente de uma “flecha” apontada para fora do circulo. Esse LED informa se há algum problema de perca de sinal entre a sua casa e o provedor de internet emitindo a luz vermelha. Caso esse LED esteja emitindo uma luz vermelha, contate seu provedor e nunca mecha no cabo de fibra e no seu conector, pois você pode agravar ainda mais o problema.</p>
+        <img src="assets/onuloss.png" alt="ONULOSS">
+        <h3>LAN</h3>
+        <p>Essa sigla é a abreviação, em inglês, de “Local Area Network”, alguns costumam chamar também de rede local. No equipamento de fibra (ONU), essa porta LAN interliga o equipamento ONU com o seu roteador, fazendo seu roteador se conectar com a rede do seu provedor e consecutivamente com a internet mundial. Caso este LED esteja desligado, verifique se o cabo de rede está conectado na entrada LAN do equipamento de fibra (ONU) e na entrada WAN do seu roteador. Caso as ponteiras do cabo de rede estejam conectadas corretamente e o LED ainda estiver apagado, experimente retirar o cabo de rede da porta LAN da ONU e na WAN do roteador e colocar novamente, e também verifique se o seu roteador está realmente ligado. Se o problema persistir ligue para seu provedor.</p>
+        <img src="assets/roteador.jpg" alt="onu e roteador">
+        <h3>Phone</h3>
+        <p>Para clientes que possuem linha telefônica via fibra óptica (VOIP), o equipamento ONU tem uma porta para conector RJ11 (telefone), semelhante a porta LAN que fica ao lado, com essa porta o cliente pode fazer as ligações através de seu telefone fixo. o LED que representa essa conexão com o telefone é aquele semelhante ao gancho do telefone com a escrita “Phone” e ele sempre permanece com a luz verde ligada, mesmo se o telefone esteja desligado essa luz fica ligada. Caso ela esteja apagada, provavelmente o problema é com o seu provedor, ligue para ele para poder resolver esse problema.</p>
+        <img src="assets/telefonia.png" alt="Phone">
+        <h3>Power</h3>
+        <p>Esse LED informa se seu dispositivo está ligado ou está desligado. Caso não esteja ligado nenhum LED, verifique se o botão superior foi pressionado ou não, (caso seu equipamento tenha um botão) e verifique se a fonte esteja conectada em sua tomada. Se estiver tudo certo, tente trocar de tomada para ver se o equipamento ligará. Se caso o equipamento ligar somente essa luz do power enquanto as outras permanecem desligada, confira se a voltagem da fonte que liga o equipamento é a mesma voltagem do equipamento, pois se a voltagem for diferente, o equipamento pode sofrer algum dano ou até mesmo não ligar alguns serviços internos do equipamento. Caso ainda permanecer sem internet ou sem ligar os LED’S, ligue para seu provedor.</p>
+        <img src="assets/onu-e-fonte-2.png" alt="Power">
+        <p>OBS: Geralmente a voltagem do equipamento é 12V por 0,5A. Caso esteja uma voltagem diferente, verifique se essa fonte não foi invertida com a fonte do roteador.</p>
+    </div>
+</body>
+</html>

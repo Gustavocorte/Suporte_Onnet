@@ -1,1 +1,84 @@
-/* You can add global styles to this file, and also import other style files */
+*{margin: 0;
+  padding: 0;
+
+}
+
+:root {
+  --onnet: #1f713c
+}
+
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+}
+
+.menu{
+list-style: none;
+float: left;
+margin-left: 3em;
+position: relative;
+z-index: 100;
+}
+
+.menu li{
+  position:relative;
+  float:left;
+  border-bottom: 1px solid #1f713c;
+  width: 170px;
+  }
+
+  .menu .submenu li {
+    border-bottom: 1px solid #1f713c;
+  }
+
+.menu li a{
+  color:#333;
+  text-decoration:none;
+  padding:5px 10px;
+  display:block;}
+
+.menu li a:hover{
+  background:#1f713c;
+  color:#fff;
+  -moz-box-shadow: 0 3px 10px 0 #CCC;
+  -webkit-box-shadow: 0 3px 10px 0 #ccc;
+  font-weight: 600;
+/* text-shadow:0px 0px 5px #fff; */
+}
+
+.menu li  ul{
+  position:absolute;
+  top:25px;
+  left:0;
+  background-color:#fff;
+  display:none;
+  }
+
+  /* Exibindo submenu */
+
+.menu li:hover ul, .menu li:hover ul{
+  display:block;
+}
+
+.menu li ul li{
+  /* border:1px solid #c0c0c0; */
+  display:block;
+  width:150px;
+}
+
+/* paginas */
+
+.conteiner h3 {
+  padding-bottom: 2em;
+  font-size: 2.5em;
+  padding-top: 2em;
+  position: relative;
+}
+
+.conteiner {
+  position: relative;
+  margin-top: 5em;
+  font-size: 1.3em;
+  margin: 8em;
+
+}

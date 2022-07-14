@@ -1,0 +1,33 @@
+img {
+  width: 50em;
+  display: flex;
+  flex-direction: row;
+  margin: 5em auto;
+}
+
+h2 {
+  display: flex;
+  padding-bottom: 2em;
+  font-size: 2em;
+  padding-top: 2em;
+  position: relative;
+}
+
+.pontoacesso img {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  width: 10em;
+}
+
+.pontoacesso p {
+  display: flex;
+  align-items: center;
+}
+
+.pingdude video {
+  width: 50em;
+  display: flex;
+  flex-direction: row;
+  margin: 5em auto;
+}

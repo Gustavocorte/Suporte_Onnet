@@ -8,6 +8,13 @@
 
 .huawei img {
   width: 30em;
-  align-items: center;
-  margin: auto;
+  display: inline;
+  margin: 5em 5.3em;
+}
+
+.pingdude video {
+  width: 50em;
+  display: flex;
+  flex-direction: row;
+  margin: 5em auto;
 }

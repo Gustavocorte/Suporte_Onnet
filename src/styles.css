@@ -68,21 +68,25 @@ z-index: 100;
 
 /* paginas */
 
-.conteiner h3 {
+.container h3 {
   padding-bottom: 2em;
   font-size: 2.5em;
   padding-top: 2em;
   position: relative;
 }
 
-.conteiner {
+.container h2 {
+  margin: 1em 0em;
+ }
+
+.container {
   position: relative;
   margin-top: 5em;
   font-size: 1.3em;
   margin: 8em;
 }
 
-.conteiner img {
+.container img {
     display: flex;
     flex-direction: row;
     margin: 5em auto;

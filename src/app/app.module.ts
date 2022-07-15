@@ -21,6 +21,7 @@ import { MkSolutionsComponent } from './pages/system/mk-solutions/mk-solutions.c
 import { MktZapComponent } from './pages/system/mkt-zap/mkt-zap.component';
 import { DnsComponent } from './pages/information/dns/dns.component';
 import { HomeComponent } from './home/home.component';
+import { AdditionalInformationComponent } from './pages/information/additional-information/additional-information.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { HomeComponent } from './home/home.component';
     MkSolutionsComponent,
     MktZapComponent,
     DnsComponent,
-    HomeComponent
+    HomeComponent,
+    AdditionalInformationComponent
   ],
   imports: [
     BrowserModule,

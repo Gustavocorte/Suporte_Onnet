@@ -17,6 +17,7 @@ import { AgendaComponent } from './pages/system/agenda/agenda.component';
 import { MkSolutionsComponent } from './pages/system/mk-solutions/mk-solutions.component';
 import { MktZapComponent } from './pages/system/mkt-zap/mkt-zap.component';
 import { HomeComponent } from './home/home.component';
+import { AdditionalInformationComponent } from './pages/information/additional-information/additional-information.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -35,7 +36,8 @@ const routes: Routes = [
   {path: 'u2000', component: U2000Component},
   {path: 'netNumen', component: NetNumenComponent},
   {path: 'dude', component: DudeComponent},
-  {path: 'dns', component: DnsComponent}
+  {path: 'dns', component: DnsComponent},
+  {path: 'additionalInformation', component: AdditionalInformationComponent}
 ];
 
 @NgModule({

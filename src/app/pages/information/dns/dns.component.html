@@ -1,1 +1,61 @@
-<p>dns works!</p>
+<div class="container ">
+  <h3>Nome de Domínio</h3>
+  <p>O termo “nome de domínio” é um termo técnico para endereço de site. Os proprietários de sites registram o seu nome de domínio com uma empresa de hospedagem, para só depois construírem e lançarem seu site no URL desejado. Mas, como os computadores não falam a nossa língua, é necessário traduzir esses nomes para algo legível e acessível para o computador.<br><br>
+  <p>É neste momento que entra o servidor DNS. Para compreender o que é o servidor DNS continue acompanhando este artigo! </p>
+  <h3>O que é servidor DNS?</h3>
+  <p>Sem o servidor DNS (Sistema de Nomes de Domínio) seria praticamente impossível usar um navegador web para localizar sites. Resumidamente, o servidor DNS junta nomes de domínio com endereços IP, o que permite que o seu computador encontre e carregue o site de forma correta. Ou seja, nomes de domínio são endereços da web sociáveis para humanos. E endereços IP identificam cada um desses sites com um código numérico para o computador, por exemplo: 123.546.7.8.</p><br><br>
+  <img src="assets/trafegodns.png" alt="Trafego do dns ">
+  <ol>
+    <li>Um usuário abre um navegador, digita www.exemplo.com na barra de endereços e aperta Enter.</li>
+    <li>A solicitação de www.exemplo.com é direcionada para um resolvedor DNS, que geralmente é gerenciado pelo ISP (Internet service provider – Provedor de serviços de internet) do usuário, como um provedor de internet a cabo, um provedor de banda larga DSL ou uma rede corporativa.</li>
+    <li>O resolvedor DNS do ISP encaminha a solicitação, que sai de www.exemplo.com e passa para um serviço de nome raiz DNS.</li>
+    <li>O resolvedor DNS do ISP encaminha novamente a solicitação de www.exemplo.com, mas desta vez para um dos servidores de nome TLD de domínios .com. O servidor de nome dos domínios .com responde a solicitação com os nomes dos quatro servidores de nome do Amazon Route 53 que estão associados ao domínio exemplo.com.</li>
+    <li>O resolvedor DNS do ISP escolhe um servidor de nome do Amazon Route 53 e encaminha a solicitação de www.exemplo.com para o servidor de nome em questão.</li>
+    <li>O servidor de nome do Amazon Route 53 procura na zona hospedada exemplo.com pelo registro de www.exemplo.com, obtém o valor associado, como o endereço IP de um servidor web (192.0.2.44) e retorna o endereço IP ao resolvedor DNS.</li>
+    <li>Por fim, o resolvedor DNS do ISP obtém o endereço IP de que o usuário precisa. O resolvedor retorna este valor para o navegador. O resolvedor DNS também armazenará em cache o endereço IP de exemplo.com durante um período que você especificará para que ele possa responder mais rapidamente da próxima vez que alguém pesquisar por exemplo.com. Para obter mais informações, consulte a TTL (time to live – vida útil).</li>
+    <li>O navegador enviará uma solicitação de www.exemplo.com para o endereço IP que obteve do resolvedor DNS. O seu conteúdo poderá ser encontrado lá. Por exemplo, um servidor web em execução em uma instância do Amazon EC2 ou um bucket do Amazon S3 que seja configurado como um endpoint do site.</li>
+    <li>O servidor web ou outro recurso em 192.0.2.44 retornará a página web de www.exemplo.com para o navegador que, por sua vez, exibirá a página.</li>
+  </ol>
+  <h3>Arpanet</h3>
+  <p>A ARPAnet (Advanced Research Projects Agency Network, em português, Rede da Agência de Pesquisas em Projetos Avançados) foi a primeira rede de computadores, construída em 1969 como um meio robusto para transmitir dados militares sigilosos e para interligar os departamentos de pesquisa por todo os Estados Unidos. ARPAnet primeiro executou NCP (Network Control Protocol, em português, Protocolo de Controle de Rede) e posteriormente a primeira versão do protocolo de internet ou o conjunto de protocolos TCP/IP (Transmission Control Protocol/Internet Protocol, em português, Protocolo de Controle de Transmissão/Protocolo de Internet), fazendo da ARPAnet uma parte proeminente da nascente Internet. ARPAnet foi fechado no início de 1990.</p>
+  <h3>Adição de novos computadores</h3>
+  <p>Como a estrutura era bem simples, a rede contava com um único arquivo de texto, que trazia uma tabela que continha os respectivos IPs. Conforme foram adicionando novos computadores a essa rede, os engenheiros notaram que dava muito trabalho fazer a atualização desse arquivo e o manter. Então, após surgir essa necessidade de automatizar a gestão e criação de novos endereços IPs, foi quando surgiu o DNS.</p>
+  <h3>Protocolo TCP/IP</h3>
+  <p>O DNS surgiu no começo da década de 80, tornando mais fácil a escalabilidade da Internet, possibilitando uma expansão da rede de           computadores através do protocolo TCP/IP.<br><br>
+    As informações passaram a ser replicadas em outras máquinas e deixaram de se concentrar em apenas um computador, sendo essa a mudança mais significativa. Assim nasceu o que chamamos de sistema distribuído.</p>
+    <h3>Endereço IP</h3>
+    <p>Um endereço IP é dotado com uma estrutura formada por números e pontos. Um exemplo é o IP do Google que é 172.217.6.78, ao copiar e colar essa sequência em seu navegador, irá aparecer a página principal dele.</p>
+    <h3>Quais são os servidores mais utilizados?</h3>
+    <h2>OnNet Telecom</h2>
+    <ul>
+      <li>177.85.0.2 (servidor primário)</li>
+      <li>177.85.0.3 (servidor secundário)</li>
+    </ul>
+    <h2>Google Public DNS</h2>
+    <ul>
+      <li>8.8.8.8 (servidor primário)</li>
+      <li>8.8.4.4 (servidor secundário)</li>
+    </ul>
+    <h2>Open DNS</h2>
+    <ul>
+      <li>208.67.222.222 (servidor primário)</li>
+      <li>208.67.220.220 (servidor secundário)</li>
+    </ul>
+    <h2>CLOUDFLARE</h2>
+    <ul>
+      <li>1.1.1.1 (servidor primário)</li>
+      <li>1.0.0.1 (servidor secundário)</li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

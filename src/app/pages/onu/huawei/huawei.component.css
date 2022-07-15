@@ -3,7 +3,7 @@
 }
 
 #telalogin {
-  width: 70em;
+  width: 60em;
 }
 
 .huawei img {
@@ -15,6 +15,12 @@
 .pingdude video {
   width: 50em;
   display: flex;
+  align-items: center;
   flex-direction: row;
   margin: 5em auto;
+}
+
+#huaweilogin {
+  width: 80em;
+  display: inline;
 }

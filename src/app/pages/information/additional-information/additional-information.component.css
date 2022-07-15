@@ -2,3 +2,44 @@ h4 {
   font-size: 2em;
   margin: 2em 0;
 }
+
+.vlan{
+  list-style: none;
+  float: left;
+  margin: 0px 10em;
+  margin-bottom: 3em;
+  position: relative;
+  z-index: 100;
+}
+
+.apagar {
+  opacity: 0;
+}
+
+.vlancidade li {
+
+}
+
+.vlan ul li h2 {
+  font-size: 1.1em;
+  margin-bottom: 0.7em;
+}
+
+.vlan ul {
+  border-bottom: 2px solid black;
+  text-align: center;
+  margin: 1em;
+}
+
+
+.vlan li{
+  position:relative;
+  float:left;
+  width: 16em;
+  list-style: none;
+  color:rgb(0, 0, 0);
+  padding: 5px 10px;
+  display:block;
+  margin-top: 0.5em;
+  padding-bottom: 0.1em;
+}

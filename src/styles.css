@@ -35,7 +35,8 @@ z-index: 100;
   color:#333;
   text-decoration:none;
   padding:5px 10px;
-  display:block;}
+  display:block;
+}
 
 .menu li a:hover{
   background:#1f713c;

@@ -12,12 +12,9 @@ h4 {
   z-index: 100;
 }
 
+
 .apagar {
   opacity: 0;
-}
-
-.vlancidade li {
-
 }
 
 .vlan ul li h2 {
@@ -28,9 +25,12 @@ h4 {
 .vlan ul {
   border-bottom: 2px solid black;
   text-align: center;
-  margin: 1em;
+  margin: 1em ;
 }
 
+.vlancidade ul li {
+  text-align: start;
+}
 
 .vlan li{
   position:relative;

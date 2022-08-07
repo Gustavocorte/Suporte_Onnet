@@ -1,141 +1,146 @@
 <div class="container">
   <h3>DMZ</h3>
-  <h2>Porta 1024 a 65535</h2><br>
-  <p>Por quê não liberamos as portas anteriores à 1024? São portas
-    reservadas, conhecidas como well know ports, são usadas
-    para serviços mais utilizados como: servidores web,
-    compartilhamento de arquivos, etc. Um exemplo é a porta 80,
-    ela é reservada para uso de serviços web e a porta 53, que é
+  <h2>Porta 1024 a 65535</h2>
+  <br />
+  <p>
+    Por quê não liberamos as portas anteriores à 1024? São portas reservadas,
+    conhecidas como well know ports, são usadas para serviços mais utilizados
+    como: servidores web, compartilhamento de arquivos, etc. Um exemplo é a
+    porta 80, ela é reservada para uso de serviços web e a porta 53, que é
     reservada para dns
   </p>
   <h3>DMZ pulando uma porta de acesso específica:</h3>
   <h2>Porta 1025 a 2087 e 2089 a 65535</h2>
-  <p>É utilizada para casos onde não se pode de forma alguma
-    liberar aquela porta específica para acesso (no exemplo acima
-    a 2088), por quê? porque senão iremos perder o acesso ao nosso
-    equipamento e não será possível realizar manutenção nele
-    remotamente a menos que seja por meio de programas de acesso
+  <p>
+    É utilizada para casos onde não se pode de forma alguma liberar aquela porta
+    específica para acesso (no exemplo acima a 2088), por quê? porque senão
+    iremos perder o acesso ao nosso equipamento e não será possível realizar
+    manutenção nele remotamente a menos que seja por meio de programas de acesso
     remoto. Ex: team viewer, anydesk, etc.
   </p>
   <h2>NAT</h2>
-    <p>É a tradução de endereço de rede, resumindo, é um
-      recurso que faz a tradução de um endereço de ip
-      privado(local) para um endereço de ip público, ele serve para
-      que se tenha acesso à outros servidores fora da rede interna
-    </p>
+  <p>
+    É a tradução de endereço de rede, resumindo, é um recurso que faz a tradução
+    de um endereço de ip privado(local) para um endereço de ip público, ele
+    serve para que se tenha acesso à outros servidores fora da rede interna
+  </p>
   <h2>PING</h2>
-  <p>É um comando que serve para testar conectividade entre
-    equipamentos de uma rede, resumindo, quando você envia um
-    pacote para determinado servidor, é o ping, a resposta que este
-    servidor te dá é o pong(sim, é do jogo ping-pong), o teste de ping
-    serve para avaliar o tempo que o pacote demora para sair da
-    sua máquina, chegar no servidor e voltar para sua máquina,
-    quanto mais alto o ping, mais lento será para que possa receber
-    o pacote que enviou anteriormente, fazendo com que ocorra
-    atrasos na transmissão(muito utilizado em jogos)
+  <p>
+    É um comando que serve para testar conectividade entre equipamentos de uma
+    rede, resumindo, quando você envia um pacote para determinado servidor, é o
+    ping, a resposta que este servidor te dá é o pong(sim, é do jogo ping-pong),
+    o teste de ping serve para avaliar o tempo que o pacote demora para sair da
+    sua máquina, chegar no servidor e voltar para sua máquina, quanto mais alto
+    o ping, mais lento será para que possa receber o pacote que enviou
+    anteriormente, fazendo com que ocorra atrasos na transmissão(muito utilizado
+    em jogos)
   </p>
   <h2>IP</h2>
-  <p>É um comando que serve para testar conectividade entre
-    equipamentos de uma rede, resumindo, quando você envia um
-    pacote para determinado servidor, é o ping, a resposta que este
-    servidor te dá é o pong(sim, é do jogo ping-pong), o teste de ping
-    serve para avaliar o tempo que o pacote demora para sair da
-    sua máquina, chegar no servidor e voltar para sua máquina,
-    quanto mais alto o ping, mais lento será para que possa receber
-    o pacote que enviou anteriormente, fazendo com que ocorra
-    atrasos na transmissão(muito utilizado em jogos)
+  <p>
+    É um comando que serve para testar conectividade entre equipamentos de uma
+    rede, resumindo, quando você envia um pacote para determinado servidor, é o
+    ping, a resposta que este servidor te dá é o pong(sim, é do jogo ping-pong),
+    o teste de ping serve para avaliar o tempo que o pacote demora para sair da
+    sua máquina, chegar no servidor e voltar para sua máquina, quanto mais alto
+    o ping, mais lento será para que possa receber o pacote que enviou
+    anteriormente, fazendo com que ocorra atrasos na transmissão(muito utilizado
+    em jogos)
   </p>
   <h2>DHCP</h2>
-  <p>É um protocolo de rede que permite que os equipamentos
-    conectados nele possam receber endereços ip
-    automáticamente, sem a necessidade de serem setados
-    manualmente, lembrando: Cada equipamento terá um endereço
-    ip único na rede, se a sequência de ip's disponível acabar,
-    possivelmente o equipamento não conseguirá se conectar
+  <p>
+    É um protocolo de rede que permite que os equipamentos conectados nele
+    possam receber endereços ip automáticamente, sem a necessidade de serem
+    setados manualmente, lembrando: Cada equipamento terá um endereço ip único
+    na rede, se a sequência de ip's disponível acabar, possivelmente o
+    equipamento não conseguirá se conectar
   </p>
   <h2>IP ESTÁTICO X IP DINÂMICO</h2>
-  <p><b>IP ESTÁTICO:</b> um endereço de ip que não irá se alterar mesmo que
-    o equipamento seja reiniciado, ele será exclusivo
-    daquele equipamento, isso claro, se este endereço ip
-    estiver disponível na rede para que haja a conexão, do
-    contrário, poderá acontecer um conflito de ip's, onde um
-    equipamento já um ip único e outro equipamento está
-    tentando obter aquele mesmo endereço ip, com isso gera
-    o conflito
-  </p><br>
-  <p><b>IP DINÂMICO:</b> neste caso o endereço de ip não será setado no
-    equipamento e sim, irá buscar um endereço ip disponível
-    na rede para definir como seu e assim, fazer a conexão
+  <p>
+    <b>IP ESTÁTICO:</b> um endereço de ip que não irá se alterar mesmo que o
+    equipamento seja reiniciado, ele será exclusivo daquele equipamento, isso
+    claro, se este endereço ip estiver disponível na rede para que haja a
+    conexão, do contrário, poderá acontecer um conflito de ip's, onde um
+    equipamento já um ip único e outro equipamento está tentando obter aquele
+    mesmo endereço ip, com isso gera o conflito
+  </p>
+  <br />
+  <p>
+    <b>IP DINÂMICO:</b> neste caso o endereço de ip não será setado no
+    equipamento e sim, irá buscar um endereço ip disponível na rede para definir
+    como seu e assim, fazer a conexão
   </p>
   <h2>MAC</h2>
-  <p>É um endereço físico e único da placa de rede de cada
-    equipamento, esse número é gravado diretamente na placa
-    física e na identificação da própria placa de rede, porém ele
-    pode ser alterado.
+  <p>
+    É um endereço físico e único da placa de rede de cada equipamento, esse
+    número é gravado diretamente na placa física e na identificação da própria
+    placa de rede, porém ele pode ser alterado.
   </p>
   <h4>Diferênça entre rede 5ghz e 2.4ghz</h4>
-  <p><b>2.4ghz:</b> foi a primeira frequência de wi-fi criada então, todos os
-    equipamentos que surgiram depois dela, conseguem se
-    conectar normalmente à essa rede, mesmo um
-    equipamento de 10 anos atrás quanto um equipamento de
-    agora, eles possuem suporte para ela. Por ter uma
-    frequência mais baixa a quantidade de pacotes trocados
-    entre o roteador e o equipamento (celular, computador,
-    etc) é menor, porém essa frequência permite que o sinal
-    vá mais longe, atingindo áreas mais distantes. Em
-    decorrência da frequência mais baixa, a velocidade de
-    transmissão de dados varia entre 20mb à 50mb ou entre
+  <p>
+    <b>2.4ghz:</b> foi a primeira frequência de wi-fi criada então, todos os
+    equipamentos que surgiram depois dela, conseguem se conectar normalmente à
+    essa rede, mesmo um equipamento de 10 anos atrás quanto um equipamento de
+    agora, eles possuem suporte para ela. Por ter uma frequência mais baixa a
+    quantidade de pacotes trocados entre o roteador e o equipamento (celular,
+    computador, etc) é menor, porém essa frequência permite que o sinal vá mais
+    longe, atingindo áreas mais distantes. Em decorrência da frequência mais
+    baixa, a velocidade de transmissão de dados varia entre 20mb à 50mb ou entre
     50mb à 80/90mb.
-  </p><br>
-  <p><b>5ghz:</b> surgiu mais recentemente então não são todos os
-    equipamentos que possuem suporte para esta frequência
-    de rede, com isso, alguns equipamentos mais antigos não
-    conseguem nem mesmo enxergar a rede 5ghz, isso se deve
-    ao fato de ela possuir uma frequência de rede mais alta
-    do que a que eles suportam. Com essa frequência mais
-    alta, a quantidade de pacotes que podem ser trocados
-    entre os equipamentos aumenta, fazendo com que as
-    transferências sejam mais rápidas do que na 2.4ghz porém,
-    pelo aumento da frequência, a distância de alcance dela
-    é menor pois a onda que ela é enviada é mais larga,
-    quanto mais larga a onda, menor a distância que ela
-    alcança. A velocidade de transmissão de dados é acima
-    de 100mb, possuindo suporte de até 1gb(1024mb) de conexão.
+  </p>
+  <br />
+  <p>
+    <b>5ghz:</b> surgiu mais recentemente então não são todos os equipamentos
+    que possuem suporte para esta frequência de rede, com isso, alguns
+    equipamentos mais antigos não conseguem nem mesmo enxergar a rede 5ghz, isso
+    se deve ao fato de ela possuir uma frequência de rede mais alta do que a que
+    eles suportam. Com essa frequência mais alta, a quantidade de pacotes que
+    podem ser trocados entre os equipamentos aumenta, fazendo com que as
+    transferências sejam mais rápidas do que na 2.4ghz porém, pelo aumento da
+    frequência, a distância de alcance dela é menor pois a onda que ela é
+    enviada é mais larga, quanto mais larga a onda, menor a distância que ela
+    alcança. A velocidade de transmissão de dados é acima de 100mb, possuindo
+    suporte de até 1gb(1024mb) de conexão.
   </p>
   <h4>Causa as interferências pelo wi-fi</h4>
   <ul>
     <li>A forma como o roteador sem fio está posicionado</li>
     <li>Obstáculos físicos, como paredes e pisos</li>
-    <li>Quaisquer outros aparelhos sem fio (monitores para bebê, controles para abrir o portão da garagem, etc.)</li>
+    <li>
+      Quaisquer outros aparelhos sem fio (monitores para bebê, controles para
+      abrir o portão da garagem, etc.)
+    </li>
     <li>Utensílios de cozinha, tais como, micro-ondas ou geladeira</li>
     <li>Outras redes wi-fi na mesma área</li>
   </ul>
   <h4>O que são OLTs</h4>
-  <p>Um equipamento utilizado na concentração e
-    distribuição da rede de fibra óptica fttx (fiber-to-the-x). O
-    sinal óptico que sai da olt é direcionado ao divisor, ou
-    splitters. São esses aparelhos que farão a divisão do sinal e da
-    taxa de transmissão, fazendo com que ele chegue a seu destino,
-    que é a onu ou a ont.
+  <p>
+    Um equipamento utilizado na concentração e distribuição da rede de fibra
+    óptica fttx (fiber-to-the-x). O sinal óptico que sai da olt é direcionado ao
+    divisor, ou splitters. São esses aparelhos que farão a divisão do sinal e da
+    taxa de transmissão, fazendo com que ele chegue a seu destino, que é a onu
+    ou a ont.
   </p>
   <h4>O que são SPLITTERs</h4>
-  <p>Ele é um componente passivo da rede que serve para
-    dividir o sinal óptico, aumentando assim a ramificação
-    desta rede e dando-lhe mais capilaridade.
-    assim, o splitter é capaz de distribuir (derivar) as fibras
-    para que a olt atenda a várias onts. ou seja, ele é um
-    elemento fundamental para aplicações ponto-multiponto.
+  <p>
+    Ele é um componente passivo da rede que serve para dividir o sinal óptico,
+    aumentando assim a ramificação desta rede e dando-lhe mais capilaridade.
+    assim, o splitter é capaz de distribuir (derivar) as fibras para que a olt
+    atenda a várias onts. ou seja, ele é um elemento fundamental para aplicações
+    ponto-multiponto.
   </p>
   <h4>O que é VLANs</h4>
-  <p>São como ilhas que separam diferentes tipos de sub-rede,
-    resumindo, ele separa um rede interna de outra rede interna,
-    pensando de acordo com a conexão da onnet hoje, cada vlan
-    que nós temos é referente à uma cidade ou à um bairro, com
-    isso, uma rede não interfere na outra e a organização é maior.
-  </p><br>
+  <p>
+    São como ilhas que separam diferentes tipos de sub-rede, resumindo, ele
+    separa um rede interna de outra rede interna, pensando de acordo com a
+    conexão da onnet hoje, cada vlan que nós temos é referente à uma cidade ou à
+    um bairro, com isso, uma rede não interfere na outra e a organização é
+    maior.
+  </p>
+  <br />
   <div class="vlan">
     <ul>
-      <li class="vlancidade"><h2>Patrocinio</h2>
+      <li class="vlancidade">
+        <h2>Patrocinio</h2>
         <ul>
           <li>OLT 1 (Constantino) - 801, 802, 803, 804</li>
           <li>OLT 2 (Centro) - 811, 812, 813</li>
@@ -144,7 +149,8 @@
           <li>Telefonia - 1018</li>
         </ul>
       </li>
-      <li class="vlancidade"><h2>Patos de Minas</h2>
+      <li class="vlancidade">
+        <h2>Patos de Minas</h2>
         <ul>
           <li>OLT 1 - 851</li>
           <li>OLT 2 - 855</li>
@@ -153,7 +159,8 @@
           <li class="apagar">.</li>
         </ul>
       </li>
-      <li class="vlancidade"><h2>João Pinheiro</h2>
+      <li class="vlancidade">
+        <h2>João Pinheiro</h2>
         <ul>
           <li>OLT João Pinheiro - 880</li>
           <li>Telefonia - 1014</li>
@@ -163,124 +170,136 @@
           <li class="apagar">.</li>
         </ul>
       </li>
-        <li class="vlancidade"><h2>Guimarânia</h2>
-          <ul>
-            <li>OLT Guimarânia - 840, 841, 842</li>
-            <li>Telefonia - 1011</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-          </ul>
-        </li>
-        <li class="vlancidade"><h2>Abadia dos Dourados</h2>
-          <ul>
-            <li>OLT Abadia - 860</li>
-            <li>Telefonia - 1013</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-          </ul>
-        </li>
-        <li class="vlancidade"><h2>Três Marias</h2>
-          <ul>
-            <li>OLT Três Marias - 886</li>
-            <li>Telefonia - 1019</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-          </ul>
-        </li>
-        <li class="vlancidade"><h2>Iraí</h2>
-          <ul>
-            <li>OLT Iraí - 831</li>
-            <li>Telefonia - 1012</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-          </ul>
-        </li>
-        <li class="vlancidade"><h2>Varjão</h2>
-          <ul>
-            <li>OLT Varjão - 870</li>
-            <li>Telefonia - 1019</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-          </ul>
-        </li>
-        <li class="vlancidade"><h2>Lagoa Formosa</h2>
-          <ul>
-            <li>OLT Lagoa - 895, 171</li>
-            <li>Telefonia - 1018</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-          </ul>
-        </li>
-        <li class="vlancidade"><h2>Presidente Olegario</h2>
-          <ul>
-            <li>OLT Presidente Olegario - 876</li>
-            <li>Telefonia - 1015</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-          </ul>
-        </li>
-        <li class="vlancidade"><h2>Cruzeiro  da Fortaleza</h2>
-          <ul>
-            <li>OLT Cruzeiro  da Fortaleza - 890</li>
-            <li>Telefonia - 1015</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-          </ul>
-        </li>
-        <li class="vlancidade"><h2>São Gonçalo</h2>
-          <ul>
-            <li>OLT São Gonçalo - 872</li>
-            <li>Telefonia - 1019</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-          </ul>
-        </li>
-        <li class="vlancidade"><h2>Buritizeiro</h2>
-          <ul>
-            <li>OLT Buritizeiro - 500</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-          </ul>
-        </li>
-        <li class="vlancidade"><h2>Pirapora</h2>
-          <ul>
-            <li>OLT Pirapora 1 - 900</li>
-            <li>OLT Pirapora 2 - 901</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-          </ul>
-        </li>
-        <li class="vlancidade"><h2>Varzea da Palma</h2>
-          <ul>
-            <li>OLT Varzea da Palma 1 - 299, 902</li>
-            <li>OLT Varzea da Palma 2 - 600</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-            <li class="apagar">.</li>
-          </ul>
-        </li>
+      <li class="vlancidade">
+        <h2>Guimarânia</h2>
+        <ul>
+          <li>OLT Guimarânia - 840, 841, 842</li>
+          <li>Telefonia - 1011</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+        </ul>
+      </li>
+      <li class="vlancidade">
+        <h2>Abadia dos Dourados</h2>
+        <ul>
+          <li>OLT Abadia - 860</li>
+          <li>Telefonia - 1013</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+        </ul>
+      </li>
+      <li class="vlancidade">
+        <h2>Três Marias</h2>
+        <ul>
+          <li>OLT Três Marias - 886</li>
+          <li>Telefonia - 1019</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+        </ul>
+      </li>
+      <li class="vlancidade">
+        <h2>Iraí</h2>
+        <ul>
+          <li>OLT Iraí - 831</li>
+          <li>Telefonia - 1012</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+        </ul>
+      </li>
+      <li class="vlancidade">
+        <h2>Varjão</h2>
+        <ul>
+          <li>OLT Varjão - 870</li>
+          <li>Telefonia - 1019</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+        </ul>
+      </li>
+      <li class="vlancidade">
+        <h2>Lagoa Formosa</h2>
+        <ul>
+          <li>OLT Lagoa - 895, 171</li>
+          <li>Telefonia - 1018</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+        </ul>
+      </li>
+      <li class="vlancidade">
+        <h2>Presidente Olegario</h2>
+        <ul>
+          <li>OLT Presidente Olegario - 876</li>
+          <li>Telefonia - 1015</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+        </ul>
+      </li>
+      <li class="vlancidade">
+        <h2>Cruzeiro da Fortaleza</h2>
+        <ul>
+          <li>OLT Cruzeiro da Fortaleza - 890</li>
+          <li>Telefonia - 1015</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+        </ul>
+      </li>
+      <li class="vlancidade">
+        <h2>São Gonçalo</h2>
+        <ul>
+          <li>OLT São Gonçalo - 872</li>
+          <li>Telefonia - 1019</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+        </ul>
+      </li>
+      <li class="vlancidade">
+        <h2>Buritizeiro</h2>
+        <ul>
+          <li>OLT Buritizeiro - 500</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+        </ul>
+      </li>
+      <li class="vlancidade">
+        <h2>Pirapora</h2>
+        <ul>
+          <li>OLT Pirapora 1 - 900</li>
+          <li>OLT Pirapora 2 - 901</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+        </ul>
+      </li>
+      <li class="vlancidade">
+        <h2>Varzea da Palma</h2>
+        <ul>
+          <li>OLT Varzea da Palma 1 - 299, 902</li>
+          <li>OLT Varzea da Palma 2 - 600</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+          <li class="apagar">.</li>
+        </ul>
+      </li>
     </ul>
   </div>
   <h4 id="teste">O que são DROPs</h4>
-  <p>São os cabos da fibra óptica, eles são cabos dielétricos
-    (não conduzem eletricidade nem geram ondas
-    eletromagnéticas) e são utilizados em redes fiber to the home
-    (ftth), quando dizemos “drop rompido”, significa que houve
-    algum rompimento em algum de nossos cabos de fibra, seja de
-    algum cliente ou mesmo de alguma caixa ou olt.
+  <p>
+    São os cabos da fibra óptica, eles são cabos dielétricos (não conduzem
+    eletricidade nem geram ondas eletromagnéticas) e são utilizados em redes
+    fiber to the home (ftth), quando dizemos “drop rompido”, significa que houve
+    algum rompimento em algum de nossos cabos de fibra, seja de algum cliente ou
+    mesmo de alguma caixa ou olt.
   </p>
 </div>
